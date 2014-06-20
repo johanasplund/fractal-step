@@ -12,7 +12,6 @@ except ImportError:
 	import tkinter.colorchooser as tkColorChooser  # py3.4
 
 
-
 class turtle(object):
 	"""drawing automaton"""
 	angle = 0
@@ -51,7 +50,7 @@ class turtle(object):
 		self.y = y_new
 
 	def printPos(self):
-		print("(" + str(self.x) + ", " + str(self.y) + ")")
+		print("(%d, %d)" % (self.x, self.y))
 
 	def printAngle(self):
 		print(str(-math.degrees(self.angle)))
